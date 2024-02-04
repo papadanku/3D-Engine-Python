@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>camera &mdash; GL-Graphics-Engine  documentation</title>
+  <title>camera &mdash; 3D-Engine-Python  documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
 
@@ -31,7 +31,7 @@
           
           
           <a href="../index.html" class="icon icon-home">
-            GL-Graphics-Engine
+            3D-Engine-Python
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -43,7 +43,7 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../modules.html">GL-Graphics-Engine</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modules.html">3D-Engine-Python</a></li>
 </ul>
 
         </div>
@@ -52,7 +52,7 @@
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">GL-Graphics-Engine</a>
+          <a href="../index.html">3D-Engine-Python</a>
       </nav>
 
       <div class="wy-nav-content">
@@ -109,7 +109,10 @@
         <span class="bp">self</span><span class="o">.</span><span class="n">pitch</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="o">-</span><span class="mi">89</span><span class="p">,</span> <span class="nb">min</span><span class="p">(</span><span class="mi">89</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">pitch</span><span class="p">))</span></div>
 
 <div class="viewcode-block" id="Camera.update_camera_vectors"><a class="viewcode-back" href="../camera.html#camera.Camera.update_camera_vectors">[docs]</a>    <span class="k">def</span> <span class="nf">update_camera_vectors</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="c1"># NOTE: We emulate a first-person camera by rotating around the Z-axis and X-axis</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        We emulate a first-person camera by rotating around the Z-axis and X-axis</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
         <span class="n">yaw</span> <span class="o">=</span> <span class="n">glm</span><span class="o">.</span><span class="n">radians</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">yaw</span><span class="p">)</span>
         <span class="n">pitch</span> <span class="o">=</span> <span class="n">glm</span><span class="o">.</span><span class="n">radians</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">pitch</span><span class="p">)</span>
 
